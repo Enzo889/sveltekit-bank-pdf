@@ -1,3 +1,7 @@
+<script>
+	import Hero from "$lib/components/Hero.svelte";
+
+</script>
 
 <svelte:head> 
     <title>Bank PDF - SvelteKit</title>
@@ -5,5 +9,5 @@
 </svelte:head>
 
 <main>
-
+    <Hero />
 </main>
