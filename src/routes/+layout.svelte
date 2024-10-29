@@ -1,27 +1,14 @@
 <script lang="ts">
 	import { ModeWatcher } from 'mode-watcher';
 	import '../app.css';
-	import FlickeringGrid from '$lib/components/FlickeringGrid.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
+	import DockMenu from '$lib/components/DockMenu.svelte';
 	let { children } = $props();
 </script>
 
-<main class="mx-auto relative min-h-screen w-[600px]">
-
+<main class="relative mx-auto min-h-screen w-full max-w-3xl">
 	<Toaster />
-    <ModeWatcher />
-    {@render children()}
-    
-    <FlickeringGrid
-        class="-z-10 absolute inset-0 size-full"
-        squareSize={4}
-        gridGap={6}
-        color="#6B7280"
-        maxOpacity={0.5}
-        flickerChance={0.1}
-        width={600}
-        height={1400}
-    />
+	<ModeWatcher />
+	{@render children()}
+	<DockMenu class="absolute bottom-4 " />
 </main>
-
-	
