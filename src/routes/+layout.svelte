@@ -2,10 +2,13 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import '../app.css';
 	import FlickeringGrid from '$lib/components/FlickeringGrid.svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 	let { children } = $props();
 </script>
 
 <main class="mx-auto relative min-h-screen w-[600px]">
+
+	<Toaster />
     <ModeWatcher />
     {@render children()}
     
