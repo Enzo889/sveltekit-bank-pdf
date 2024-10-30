@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main class="h-full w-full">
-	<div class="pt-6">
+	<div class="sticky top-0 z-30 pt-6">
 		<Navbar />
 	</div>
 	<Hero />

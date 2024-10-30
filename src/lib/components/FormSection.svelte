@@ -7,7 +7,10 @@
 	import { Label } from './ui/label';
 </script>
 
-<div id="Forms" class="mx-auto flex w-3/5 flex-col items-center justify-center space-y-4">
+<div
+	id="Forms"
+	class="mx-auto flex w-3/5 flex-col items-center justify-center space-y-4 pb-8 max-sm:w-4/5"
+>
 	<h2 class="text-4xl font-bold">Forms Section</h2>
 	<p class="text-pretty text-lg">This is the Form section on the website</p>
 	<Card.Root>
