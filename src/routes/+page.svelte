@@ -2,6 +2,7 @@
 	import Charts from '$lib/components/Charts.svelte';
 	import FormSection from '$lib/components/FormSection.svelte';
 	import Hero from '$lib/components/Hero.svelte';
+	import Incrementbutton from '$lib/components/incrementbutton.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import TablesSection from '$lib/components/TablesSection.svelte';
 </script>
@@ -18,5 +19,6 @@
 	<Hero />
 	<Charts />
 	<TablesSection />
+	<Incrementbutton />
 	<FormSection />
 </main>
